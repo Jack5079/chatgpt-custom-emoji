@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "ChatGPT Custom Emoji",
+	"version": "1.0",
+	"description": "Abuses `inline code blocks` to allow ChatGPT to display custom emoji",
+	"author": "Jack W.",
+	"homepage_url": "https://github.com/Jack5079/chatgpt-custom-emoji",
+	"icons": {
+		"128": "funnythumbsup.png"
+	},
+	"permissions": [
+		"storage"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://chatgpt.com/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
