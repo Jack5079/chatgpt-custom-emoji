@@ -2,9 +2,15 @@
 	"manifest_version": 3,
 	"name": "ChatGPT Custom Emoji",
 	"version": "1.0",
-	"description": "Abuses `inline code blocks` to allow ChatGPT to display custom emoji",
+	"description": "Tricks ChatGPT into using custom emoji",
 	"author": "Jack W.",
 	"homepage_url": "https://github.com/Jack5079/chatgpt-custom-emoji",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "chatgpt-custom-emoji@jack.cab",
+			"strict_min_version": "109.0"
+		}
+	},
 	"icons": {
 		"128": "funnythumbsup.png"
 	},
